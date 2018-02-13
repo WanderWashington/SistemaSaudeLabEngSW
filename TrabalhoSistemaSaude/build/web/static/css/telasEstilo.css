@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/11/2017, 23:21:47
+    Author     : Wander
+*/
+
+*{margin:0;
+  padding:0;
+}
+body
+{
+     background:#f8f8f8;  
+}
+
+#lista {
+    margin:0;
+    padding:0;
+    float:left;
+    margin-top:50px;
+
+}
+
+#lista li{
+    list-style:none;
+    background:#fff;
+    width:300px;
+    height:auto;
+    border-bottom:1px solid #666;
+   
+}
+
+#lista li a
+{
+    display:block;
+    padding:8px;
+    border-left: 4px solid #067;
+    text-decoration: none;
+    box-shadow:1px 1px 3px #067;
+    color:#555;   
+    font-family: 'Arial';
+    border-bottom: 2px solid #222;
+   
+}
+
+#lista li a:hover 
+{
+    border-left:4px solid #006666;
+    background:#f8f8f8;
+}
+
+#lista li ul
+{
+    display:none;
+}
+
+#lista li:hover ul li
+{
+    background:#006666;
+}
+
+#lista li:hover ul li a 
+{
+    color:#fff;
+    text-align:left;
+}
+
+#lista li:hover ul
+{
+    display:block;
+}
+
+#listas li:hover ul li a :hover
+{
+    background:#222;
+    border-left:4px solid #067;
+}
+
+nav
+{
+    background-color:#067;
+    height:100%;
+    width: 300px;
+    position:absolute;  
+    box-shadow:1px 1px 3px #067;
+}
+
+#paginasUsuarios
+{
+    margin-left:25%;
+    margin-bottom: 29%;
+    margin-right: 29%;
+    font-family: 'Arial';
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+#textoUsuario
+{
+       margin-left:25%;
+    margin-bottom: 29%;
+    margin-right: 29%;
+    font-family: 'Arial';
+    font-size: 16pt;
+    text-decoration: none;
+}

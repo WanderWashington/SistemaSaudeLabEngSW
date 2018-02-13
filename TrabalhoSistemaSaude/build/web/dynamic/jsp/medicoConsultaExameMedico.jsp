@@ -1,0 +1,65 @@
+<%-- 
+    Document   : medicoConsultaExameMedico
+    Created on : 11/12/2017, 21:20:23
+    Author     : Wander
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% 
+    String contexto = request.getContextPath();
+    if (!contexto.equals(""))
+        contexto = contexto + "/";
+%>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consulta Exame Médico</title>
+           <link rel="stylesheet" type="text/css" href="../../static/css/telasEstilo.css">
+            <link rel="stylesheet" type="text/css" href="../../static/css/formularioEstilo.css">
+           <link rel="stylesheet" type="text/css" href="${contexto}static/css/telasEstilo.css">
+           <link rel="stylesheet" type="text/css" href="${contexto}static/css/formularioEstilo.css">
+           
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+        <ul id="lista"> 
+           
+                <li><a href="#">Inicio - Médico</a></li>
+                <li><a href="#">Cadastro e Consulta</a>
+                    <ul>
+                        <li><a href="medicoAgendarExame.jsp">Agendar Exame</a></li>
+                        <li><a href="medicoAgendarRetorno.jsp">Agendar Retorno</a></li>
+                        <li><a href="medicoConsultaExameMedico.jsp">Consultar Exame</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="/TrabalhoSistemaSaude/">Sair</a></li>
+                </ul>
+         </nav>
+  <form action="../../ExameM" method="post">
+      <fieldset id="formulario">
+            <legend>Consulta Exame</legend>
+            <table cellspacing="20" >
+             <tr>
+              <td>
+               <label>CRA: </label>
+              </td>
+              <td align="left">
+               <input type="text" name="cra" size="13" maxlength="13" id="cra"> 
+              </td>
+             </tr>
+             <tr>
+                 <td>
+                     <input type="submit" value="Pesquisar" id="botaoEnviar">    
+                         <input type="reset" value="Limpar" id="botaoResetar">
+                 </td>
+             </tr>   
+            </table>
+           </fieldset>  
+    
+    </form>
+    </body>
+</html>

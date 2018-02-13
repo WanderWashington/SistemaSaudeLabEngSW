@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/11/2017, 23:08:47
+    Author     : Wander
+*/
+*{
+    margin:0;
+    padding:0;
+    outline:nome;
+    list-style:none;   
+}
+
+body{
+    font:300 16px Arial;
+    background-color:#006666;
+}
+
+#login {
+    width :310px;
+    margin:0 auto;
+    position:relative;
+    top:200px;
+    border:50px solid #999999;
+    border-radius:10px;
+    background:#999999;
+    padding:2px;
+}
+
+#login label {
+    display:block;
+    padding-top:5px;
+   
+}
+
+.texto{
+   height:40px;
+   width:300px;
+   margin:0 auto;
+   border:thin solid #fff;
+   border-radius:10px;
+   
+
+   
+}
+.texto:focus{
+    border:thin solid #09f;
+    border-radius:10px;
+    box-shadow:0 2px 16px #09f;
+    -webkit-box-shadow:0 2px 16px #09F;
+    -moz-box-shadow:0 2px 16px #09F;
+}
+
+@media screen and (max-width:600px)
+{
+ .texto:hover
+    {
+         background:#ffffcc;
+    }
+}
+
+
+@media screen and (min-width:768px)
+{
+ 
+.texto:hover
+    {   
+        background:#ffffcc;
+        border-radius:10px;
+    }
+}
+
+
+.sb{
+    display:block;
+    border-radius: 10px;
+    border-color: #ff9999;
+    width:300px;
+    height:40px;
+    margin-top:10px;
+    cursor:pointer;
+    background:#ff6666;
+    font :400 18px Arial;
+}
+.sb:hover{
+    background:#09f;
+    color:#fff;
+}
+
+.texto,.texto:focus,.sb,.sb:hover
+{
+    transition:all 0.5s linear;
+    -webkit-transition:all 0.5 linear;
+    -moz-transition:all 0.5 linear;
+    border-radius:10px;
+}
